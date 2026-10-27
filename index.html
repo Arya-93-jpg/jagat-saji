@@ -1,1 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagat Saji</title>
 
+    <style>
+        /* Awal CSS */
+        * {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            position: relative;
+        }
+
+        nav {
+            width: 100%;
+            background-color: rgb(5, 5, 0);
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 80px;
+            padding: 10px 15px;
+        }
+
+        .logo a {
+            font-size: 30px;
+            font-family: Cambria, Georgia, serif;
+            font-weight: 800;
+            color: #f8f6f5;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .menu ul li a {
+            color: rgb(244, 242, 242);
+            font-weight: bold;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .menu ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .order {
+            display: inline-block;
+            background: #f0960e;
+            border-radius: 20px;
+            padding: 10px 15px !important;
+            color: aliceblue;
+            font-weight: bold;
+        }
+
+        /* Tampilan HP */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu ul {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .menu ul li a {
+                font-size: 13px;
+                padding: 4px;
+            }
+
+            .logo a {
+                font-size: 28px;
+            }
+        }
+      
+.galeri-foto {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    padding: 15px;
+}
+
+.kartu-makanan {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #00000020;
+}
+
+.kartu-makanan img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.deskripsi-makanan {
+    padding: 10px;
+}
+
+.deskripsi-makanan h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.deskripsi-makanan p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+    </style>
+
+        /* TAMPILAN HP */
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            h2 {
+                font-size: 32px;
+                line-height: 42px;
+            }
+
+            .gambar {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        /* AKHIR BANNER */
+
+    </style>
+</head>
+
+<body>
+
+    <!-- SECTION BANNER -->
+    <div class="wrapper">
+        <section id="home">
+
+            <div class="kolom">
+                <h2>Sajian Masakan Indonesia</h2>
+
+                <p class="deskripsi">
+                    Nikmati kelezatan resep masakan leluhur yang
+                    diolah dari bumbu rempah pilihan. Dari Sabang
+                    sampai Merauke, kami menghadirkan kehangatan
+                    tradisi Indonesia langsung ke meja makan Anda.
+                    Jelajahi kekayaan rasa kuliner Nusantara dengan
+                    keaslian rempah, kesegaran bahan, dan kehangatan
+                    tradisi dalam setiap sajian. Pesan sekarang dan
+                    nikmati kelezatan masakan khas Indonesia!
+                </p>
+
+                <a href="#" class="reservasi">Pesan Sekarang</a>
+            </div>
+          
+<img src="nusantara.jpg"
+     alt="Masakan Nusantara"
+     class="gambar">
+
+
+<!-- PEMBATAS DAN JUDUL MENU -->
+<hr class="garis-menu">
+
+<h2 class="judul-menu">Daftar Menu</h2>
+
+<!-- KARTU-KARTU MENU MAKANAN DIMULAI DI SINI -->
+
+            
+<div class="galeri-foto">
+
+    <div class="kartu-makanan">
+        <img src="nasi pecel.jpg" alt="Makanan 1">
+        <div class="deskripsi-makanan">
+            <h3>Nasi Pecel</h3>
+            <p>Pecel merupakan penganan khas suku Jawa yang mudah ditemukan di Pulau Jawa, khususnya di Jawa Tengah, D.I. Yogyakarta dan Jawa Timur.</p>
+        </div>
+    </div>
+
+    <div class="kartu-makanan">
+        <img src="gado-gado.jpg" alt="Makanan 2">
+        <div class="deskripsi-makanan">
+            <h3>Gado-Gado</h3>
+            <p>Gado-gado adalah makanan yang terdiri atas sayur-sayuran, kentang, tempe, tahu, telur rebus, ketupat, lontong, yang diberi bumbu sambal kacang.</p>
+        </div>
+    </div>
+
+    <div class="kartu-makanan">
+        <img src="nusantara.jpg" alt="Makanan 3">
+        <div class="deskripsi-makanan">
+            <h3>Nasi Uduk</h3>
+            <p>Nasi uduk adalah hidangan yang dibuat dari nasi putih yang diaron dan dikukus dengan santan, serta dibumbui dengan pala, kayu manis, jahe, daun serai, dan merica, yang populer di hidangan Betawi.</p>
+        </div>
+    </div>
+
+    <div class="kartu-makanan">
+        <img src="nasi daun jeruk.jpg" alt="Makanan 4">
+        <div class="deskripsi-makanan">
+            <h3>Nasi Daun Jeruk</h3>
+            <p>Nasi daun jeruk adalah olahan nasi gurih beraroma khas yang dibuat dengan tambahan irisan daun jeruk purut, serai, dan bawang putih.</p>
+        </div>
+    </div>
+
+    <div class="kartu-makanan">
+        <img src="nasi kuning.jpg" alt="Makanan 5">
+        <div class="deskripsi-makanan">
+            <h3>Nasi Kuning</h3>
+            <p>Nasi kuning adalah makanan khas Indonesia. Makanan ini terbuat dari beras yang dimasak bersama dengan kunyit serta santan dan rempah-rempah.</p>
+        </div>
+    </div>
+
+    <div class="kartu-makanan">
+        <img src="rujak cingur.jpg" alt="Makanan 6">
+        <div class="deskripsi-makanan">
+            <h3>Rujak Cingur</h3>
+            <p>Rujak cingur adalah makanan tradisional khas Surabaya, Jawa Timur, yang menggunakan irisan cingur (moncong atau hidung sapi yang direbus empuk) sebagai bahan utamanya.</p>
+        </div>
+    </div>
+
+</div>
+
+
+       
+        </section>
+    </div>
+
+<!-- AWAL FOOTER -->
+<footer class="footer">
+    <div class="footer-kolom">
+        <h3>Contact Us</h3>
+        <p>Location: Mojokerto</p>
+        <p>WA: 08111222334</p>
+        <p>Email: aryafitradiansyah19@gmail.com</p>
+    </div>
+
+    <div class="footer-kolom">
+        <h3>JagatSaji</h3>
+        <p>Kuliner SMK Negeri 2 Mojokerto</p>
+
+        <div class="sosial">
+            <a href="#">📘</a>
+            <a href="#">📸</a>
+            <a href="#">🐦</a>
+        </div>
+    </div>
+
+    <div class="footer-kolom">
+        <h3>Opening Hours</h3>
+        <p>Everyday 10.00 AM - 18.00 PM</p>
+    </div>
+
+    <div class="copyright">
+        <p>© 2026 All Rights Reserved by rpl_skaneda</p>
+    </div>
+</footer>
+<!-- AKHIR FOOTER -->
+
+</body>
+                           </html>
+                           
